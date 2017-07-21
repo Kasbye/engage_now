@@ -1,0 +1,15 @@
+<ion-view title="Leaderboard" id="page16">
+  <ion-content padding="false" class="has-header">
+    <div id="leaderboard-button-bar16" class="button-bar">
+      <button id="leaderboard-button44" class="button button-positive button-block">Weekly</button>
+      <button id="leaderboard-button47" class="button button-positive button-block">Monthly</button>
+      <button id="leaderboard-button48" class="button button-positive button-block">All Time</button>
+    </div>
+    <ion-list id="leaderboard-list9">
+      <ion-item class="item-avatar" id="leaderboard-list-item26" ng-repeat="profile in profiles | limitTo:10">
+        <h2>{{profile.name}}</h2>
+        <p>{{profile.score}}</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

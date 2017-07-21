@@ -1,0 +1,81 @@
+<ion-view title="Signup" hide-nav-bar="true" hide-back-button="true" cache-view="false" nav-transition="none" id="page8" style="background-color:#015B9C;">
+  <ion-content padding="true" class="manual-ios-statusbar-padding" scroll="false">
+    <div id="signup-markdown1" ng-if="error" style="text-align:center;" class="show-list-numbers-and-dots error-box">
+      <p style="color:#000000;">{{error}}</p>
+    </div>
+    <form id="signup-form2" class="list center-form">
+      <div class="spacer" style="width: 290px; height: 24px;"></div>
+      <div>
+        <img src="img/b1NOOGQiSQWcyZZCskOK_ls.jpg" style="display: block; width: 33%; height: auto; margin-left: auto; margin-right: auto;">
+      </div>
+      <div class="spacer" style="height: 40px;"></div>
+      <ion-list id="signup-list3">
+        <label class="item item-input" id="signup-input3">
+          <span class="input-label">Name</span>
+          <input type="text" placeholder="Full Name" ng-model="data.name">
+        </label>
+        <label class="item item-input top-input" id="signup-input4">
+          <span class="input-label">Email</span>
+          <input type="email" placeholder="Nationwide Email" ng-model="data.email">
+        </label>
+        <label class="item item-input bottom-input" id="signup-input5">
+          <span class="input-label">Password</span>
+          <input type="password" placeholder="" ng-model="data.password">
+        </label>
+      </ion-list>
+      <label class="item item-select">
+        <span class="input-label">Select</span>
+        <select ng-model="data.location">
+          <option>Mesa, AZ</option>
+          <option>Phoenix, AZ</option>
+          <option>Scottsdale, AZ</option>
+          <option>Irvine, CA</option>
+          <option>Roseville, CA</option>
+          <option>Sacramento, CA</option>
+          <option>Santa Ana, CA</option>
+          <option>Aurora, CO</option>
+          <option>Denver, CO</option>
+          <option>Gainesville, FL</option>
+          <option>Des Moines, IA</option>
+          <option>Johnston, IA</option>
+          <option>Urbandale, IA</option>
+          <option>Shrewsbury, MA</option>
+          <option>Worcester, MA</option>
+          <option>Baltimore, MD</option>
+          <option>Columbia, MD</option>
+          <option>Morrisville, NC</option>
+          <option>Raleigh, NC</option>
+          <option>Lincoln, NE</option>
+          <option>Pennsauken, NJ</option>
+          <option>Elmsford, NY</option>
+          <option>Hawthorne, NY</option>
+          <option>Syracuse, NY</option>
+          <option>White Plains, NY</option>
+          <option>Akron, OH</option>
+          <option>Canton, OH</option>
+          <option>Cleveland, OH</option>
+          <option>Columbus, OH</option>
+          <option>Grove City, OH</option>
+          <option>Hilliard, OH</option>
+          <option>Lancaster, OH</option>
+          <option>Marysville, OH</option>
+          <option>Westerville, OH</option>
+          <option>Worthington, OH</option>
+          <option>Enola, PA</option>
+          <option>Harleysville, PA</option>
+          <option>Harrisburg, PA</option>
+          <option>Kulpsville, PA</option>
+          <option>Lansdale, PA</option>
+          <option>Philadelphia, PA</option>
+          <option>San Antonio, TX</option>
+          <option>Moseley, VA</option>
+          <option>Richmond, VA</option>
+          <option>Wausau, WI</option>
+        </select>
+      </label>
+      <div class="spacer" style="height: 40px;"></div>
+      <button id="signup-button3" ng-click="signup()" class="button button-stable button-block">Signup</button>
+      <a ui-sref="login()" id="signup-button6" class="button button-light button-block button-outline">Already have an account?</a>
+    </form>
+  </ion-content>
+</ion-view>

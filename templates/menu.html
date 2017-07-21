@@ -1,0 +1,46 @@
+<ion-side-menus enable-menu-with-back-views="true">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-positive">
+      <ion-nav-back-button></ion-nav-back-button>
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="side-menu21"></ion-nav-view>
+  </ion-side-menu-content>
+  <ion-side-menu side="left" id="side-menu21">
+    <ion-content padding="true" style="top:0px !important;" class="side-menu-left side-menu-gradient">
+      <div class="profile-image">
+        <img src="img/fN1XysXSRK6WyxXyTqBo_CorpCit_Website_Homepage_Volunteerism.png" style="display: block; width: 60%; height: auto; margin-left: auto; margin-right: auto;" gravatar-src="userData.email" gravatar-size="200">
+      </div>
+      <h3 id="menu-heading1" style="color:#FFFFFF;text-align:center;">{{userData.name}}</h3>
+      <div class="spacer" style="height: 24px;"></div>
+      <ion-list id="menu-list5">
+        <ion-item class="item-icon-right side-menu-item" id="menu-list-item9" ui-sref="menu.dashboard()" menu-close="" active-page-highlight="">Dashboard
+          <i class="icon ion-ios-home-outline"></i>
+        </ion-item>
+        <ion-item class="item-icon-right side-menu-item" id="menu-list-item12" ui-sref="menu.myProfile()" menu-close="" active-page-highlight="">My Profile
+          <i class="icon ion-person"></i>
+        </ion-item>
+        <ion-item class="item-icon-right side-menu-item" id="menu-list-item16" ui-sref="menu.recommendations()" menu-close="" active-page-highlight="">Recommendations
+          <i class="icon ion-map"></i>
+        </ion-item>
+        <ion-item class="item-icon-right side-menu-item" id="menu-list-item14" ui-sref="menu.myEvents()" menu-close="" active-page-highlight="">My Events
+          <i class="icon ion-calendar"></i>
+        </ion-item>
+        <ion-item class="item-icon-right side-menu-item" id="menu-list-item15" ui-sref="menu.leaderboard()" menu-close="" active-page-highlight="">Leaderboard
+          <i class="icon ion-happy"></i>
+        </ion-item>
+        <ion-item class="item-icon-right side-menu-item" id="menu-list-item13" ui-sref="menu.settings()" menu-close="" active-page-highlight="">Settings
+          <i class="icon ion-settings"></i>
+        </ion-item>
+        <ion-item class="item-icon-right side-menu-item" id="menu-list-item11" ui-sref="menu.about()" menu-close="" active-page-highlight="">About
+          <i class="icon ion-document-text"></i>
+        </ion-item>
+        <ion-item class="item-icon-right side-menu-item" id="menu-list-item10" active-page-highlight="" ng-click="logout()">Logout
+          <i class="icon ion-sad"></i>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

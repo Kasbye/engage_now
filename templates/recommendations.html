@@ -1,0 +1,22 @@
+<ion-view title="Recommendations" id="page14">
+  <ion-content padding="true" class="has-header">
+    <div id="recommendations-button-bar15" class="button-bar">
+      <button id="recommendations-button45" ng-click="showList()" class="button button-positive button-block button-outline icon-left ion-ios-list-outline">Preferences</button>
+      <button id="recommendations-button46" ng-click="showMap()" class="button button-balanced button-block button-outline icon-right ion-map">Location</button>
+    </div>
+    <divlist id="recommendations-container2">
+      <ion-list id="recommendations-list12">
+        <ion-item id="recommendations-list-item18" ng-repeat="ur in userRecoms" ng-click="showModal()">{{ur.name}}</ion-item>
+      </ion-list>
+    </divlist>
+    <divmap id="recommendations-container3">
+      <ui-gmap-google-map ng-if="map.center" center="map.center" zoom="map.zoom" options="map.options" style="height:350px;" draggable="true" events="map.events">
+        <ui-gmap-layer type="TrafficLayer" show="map.showTraficLayer"></ui-gmap-layer>
+        <!-- <ui-gmap-marker ng-repeat="m in map.markers" coords="m.coords" label="m.label" icon="m.icon" idkey="m.id" title="m.title" events="m.events"> -->
+        <ui-gmap-marker ng-repeat="m in map.markers" coords="m.coords" options="m.options" idkey="m.id" title="m.title" events="m.events">
+          <!-- <ui-gmap-window><div>{{m.window.title}}</div></ui-gmap-window> -->
+        </ui-gmap-marker>
+      </ui-gmap-google-map>
+    </divmap>
+  </ion-content>
+</ion-view>
